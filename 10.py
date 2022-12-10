@@ -1,4 +1,4 @@
-def get_sum_part1(filename):
+def get_sum_part1(filename) -> int:
     sum = 1
     product_sum = 0
     clock = 0
@@ -15,7 +15,7 @@ def get_sum_part1(filename):
                 sum += add_amount
     return product_sum
             
-def part2(filename) -> str:
+def get_display_text(filename) -> str:
     print_string = ""
     sprite_pos = (0,1,2)
     clock = 0
@@ -51,4 +51,4 @@ def is_mark(clock) -> bool:
 
 if __name__ == "__main__":
     print("Part 1:",get_sum_part1("10.in"))
-    print("Part 2:",part2("10.in"))
+    print("Part 2:",get_display_text("10.in"))
